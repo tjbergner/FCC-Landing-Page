@@ -1,0 +1,295 @@
+:root {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, .field, .btn {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* Header */
+#header {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #fff;
+    opacity: 0;
+    animation: fadein 1s ease-in 0.5s forwards;
+}
+
+#header img {
+    height: 35px;
+}
+
+
+/* Navigation */
+#nav-bar {
+    flex-grow: 2;
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+}
+
+#nav-bar ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 10rem;
+}
+
+#nav-bar li:nth-child(1) {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    line-height: 1.4;
+}
+
+#nav-bar a{
+    color: #5599FF;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: color 0.25s ease-in;
+}
+
+#nav-bar a:hover {
+    color: #0044aa;
+}
+
+
+/* Main */
+main {
+    padding: 0 1rem;
+    opacity: 0;
+    animation: fadein 1s ease-in 1s forwards;
+}
+
+h2, h3 {
+    margin: 1rem 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    line-height: 1.4;
+}
+
+
+/* Showcase */
+#showcase {
+    margin-top: 2.5rem;
+}
+
+#showcase p {
+    margin: 1rem 0;
+}
+
+#title h1 {
+    color: #fff;
+    font-size: 2.1rem;
+}
+
+#title p {
+    color: #fff;
+}
+
+
+/* Video */
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    margin: 2rem 0;
+}
+
+#video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Form */
+#form {
+    color: #fff;
+}
+
+.email-wrapper {
+    margin: 0 auto;
+    width: 20.5rem;
+}
+
+#email-label {
+    display: block;
+}
+
+.field, .btn {
+    padding: 0.4rem;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+.btn {
+    font-weight: 600;
+    transition-property: color, border-color, background-color;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in;
+}
+
+#email, #submit {
+    margin-top: 0.25rem;
+}
+
+#submit {
+    color: #fff;
+    background-color: #B455FF;
+    margin-left: 1rem;
+}
+
+#submit:hover {
+    background-color: #aa3aff;
+    border-color: #9000ff;
+    cursor: pointer;
+}
+
+
+/* Service */
+#service::before {      /** hash tag link anchor offset */
+    display: block; 
+    content: " "; 
+    margin-top: -6rem; 
+    height: 6rem; 
+    visibility: hidden; 
+    pointer-events: none;
+}
+
+#service {
+    margin: 3rem 0;
+}
+
+#service h2 {
+    color: #fff;
+}
+
+
+
+/* Box */
+.box {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid #5599ff;
+    border-radius: 5px;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.material-icons {
+    font-size: 5rem;
+    color: #2776EE;
+}
+
+.box h3 {
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.box p {
+    text-align: start;
+    margin-bottom: 2rem;
+}
+
+.box a {
+    font-size: 1rem;
+    color: #2776EE;
+    border-color: #2776EE;
+}
+
+.box a:hover {
+    color: #fff;
+    background-color: #2776EE;
+}
+
+
+/* Footer */
+footer {
+    background-color: #fff;
+    padding: 1rem;
+    color: #2776EE;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .left {
+    width: 50%;
+}
+
+footer .right {
+    text-align: right;
+    width: 50%;
+}
+
+footer a {
+    color: #2776EE;
+    display: block;
+}
+
+
+/* Background */
+#bgsvg1 {
+    position: fixed;
+    z-index: -1;
+    top: -11px;
+    left: -1034px;
+}
+
+#bgsvg2 {
+    position: fixed;
+    z-index: -2;
+    top: -106px;
+    left: -445px;
+}
+
+#bgsvg3 {
+    position: fixed;
+    z-index: -1;
+    bottom: -2px;
+    left: 5px;
+    height: 88vh;
+}
+
+#bgsvg3 {
+    opacity: 0;
+    animation: fadein 1s ease-in forwards;
+}
+
+.bg {
+    position: fixed;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 30vh;
+    background-color: #5599ff;
+}
+
