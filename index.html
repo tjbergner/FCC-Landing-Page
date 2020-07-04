@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="top"></div>
     <header id="header">
         <a href="index.html"><img id="header-img" src="img/WindtechLogo.svg" alt="logo"></a>
         <nav id="nav-bar">
             <ul>
-                <li><a class="nav-link" href="#header">home</a></li>
+                <li><a class="nav-link" href="#top">home</a></li>
                 <li><a class="nav-link" href="#service">service</a></li>
                 <li><a class="nav-link" href="#footer">contact</a></li>
             </ul>
@@ -25,8 +26,10 @@
                 <h1>Renewable Energy for the World</h1>
                 <p>Innovative onshore and offshore wind technologie solutions, wherever and however you need it</p>
             </div>
-            <div class="video-wrapper">
-                <iframe id="video" width="100%" height="100%" src="https://www.youtube.com/embed/ybh7NwZv7c8" frameborder="0"     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+            <div class="container">
+                <div class="video-wrapper">
+                    <iframe id="video" width="100%" height="100%" src="https://www.youtube.com/embed/ybh7NwZv7c8" frameborder="0"     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+                </div>
             </div>
             <form id="form" action="https://www.freecodecamp.com/email-submit">
                 <h2>Contact us</h2>
@@ -61,19 +64,23 @@
         </section>
     </main>
     <footer id="footer">
-        <div class="left">
-            <p>Windtech</p>
-            <p>Tech St 4</p>
-            <p>Glasgow, UK</p>    
-        </div>
-        <div class="right">
-            <a href="tel:123-456-7890">123-456-7890</a>
-            <a href="mailto:office@wind.tech">office@wind.tech</a>    
+        <div class="footer-wrapper">
+            <div class="left">
+                <p>Windtech</p>
+                <p>Tech St 4</p>
+                <p>Glasgow, UK</p>    
+            </div>
+            <div class="right">
+                <a href="tel:123-456-7890">123-456-7890</a><br>
+                <a href="mailto:office@wind.tech">office@wind.tech</a>    
+            </div>
         </div>
     </footer>
     <div class="bg"></div>
     <img id="bgsvg1" src="img/bg1.svg" alt="">
     <img id="bgsvg2" src="img/bg2.svg" alt="">   
-    <img id="bgsvg3" src="img/wind1.svg" alt="">   
+    <img id="wind1" src="img/wind1.svg" alt="">   
+    <img id="wind2" src="img/wind2.svg" alt="">   
+    <img id="wind3" src="img/wind2.svg" alt="">   
 </body>
 </html>
