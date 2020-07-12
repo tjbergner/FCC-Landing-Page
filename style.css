@@ -524,7 +524,7 @@ footer a:hover {
 
     #wind1 {
         left: 826px;
-        height: 663px;
+        height: 70vh;
     }
 
     #wind2, #wind3 {
@@ -533,12 +533,12 @@ footer a:hover {
 
     #wind2 {
         left: 140px;
-        height: 690px;
+        height: 72vh;
     }
 
     #wind3 {
         left: 1263px;
-        height: 406px;
+        height: 44vh;
     }
 
     .bg {
